@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ICloseToHelp">
+      <HintPath>..\shanidai1234567-code\MySolutionProjectFE\ICloseToHelp\bin\Debug\net8.0\ICloseToHelp.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApplication1">
+      <HintPath>..\shanidai1234567-code\MySolutionProjectFE\WebApplication1\bin\Debug\net8.0\WebApplication1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
