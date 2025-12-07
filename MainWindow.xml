@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="TestInterface.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:TestInterface"
+		mc:Ignorable="d"
+		Title="MainWindow" Height="450" Width="800">
+	<Grid>
+
+		<!-- רקע תמונה -->
+		<Grid.Background>
+			<ImageBrush ImageSource="Assets/map.jpg" Stretch="UniformToFill"/>
+		</Grid.Background>
+
+		<!-- שכבת שקיפות לריכוך הרקע -->
+		<Border Background="#AAFFFFFF" CornerRadius="10"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Padding="30">
+
+			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+
+				<!-- כותרת ברוך הבא -->
+				<TextBlock Text="ברוך הבא"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="Black"
+                           HorizontalAlignment="Center"
+                           Margin="0 0 0 20"/>
+
+				<!-- תיבת סיסמא -->
+				<PasswordBox x:Name="PasswordInput"
+                             FontSize="20"
+                             Padding="10"
+                             Margin="0 0 0 20"/>
+
+				<!-- כפתור כניסה -->
+				<Button Content="כניסה"
+                        FontSize="20"
+                        Padding="10"
+                        Background="#0078D7"
+                        Foreground="White"
+                        Click="LoginButton_Click"/>
+			</StackPanel>
+
+		</Border>
+
+
+	</Grid>
